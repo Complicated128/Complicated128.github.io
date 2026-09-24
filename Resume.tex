@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Sean Lai} \\ \vspace{1pt}
+    \small 702-249-8242 $|$ \href{mailto:laisean5@gmail.com}{\underline{laisean5@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/sean-lai}{\underline{linkedin.com/in/sean-lai}} $|$
+    \href{https://github.com/Complicated128}{\underline{github.com/Complicated128}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Nevada, Reno}{Reno, NV}
+      {B.S. in Computer Science and Engineering}{Aug. 2024 -- Aug. 2026}
+    \resumeSubheading
+      {College of Southern Nevada}{Las Vegas, NV}
+      {Computer Science}{Aug. 2022 -- May 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Lab Member, TEEP Intern}{Aug. 2026 -- Present}
+      {HACxLab, National Ilan University}{Yilan, Taiwan}
+      \resumeItemListStart
+        \resumeItem{Program and maintain the lab website used to collect data for human-AI interaction research.}
+        \resumeItem{Participate in study discussions with HACxLab and the university's foreign language department, contributing technical perspectives on research implementation.}
+        \resumeItem{Process and present collected data to support research analysis and interpretation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{June 2025 -- Present}
+      {SparkAmplify Inc.}{Remote -- Taiwan}
+      \resumeItemListStart
+        \resumeItem{Built custom frontend and backend services using \textbf{React}, \textbf{Vue.js}, \textbf{NestJS}, \textbf{PostgreSQL}, \textbf{Supabase}, and \textbf{Docker} to receive, process, store, and display application data through rolling Agile iterations.}
+        \resumeItem{Structured features around \textbf{MVVM principles}, separating data models, application logic, and UI presentation for maintainable full-stack development.}
+        \resumeItem{Implemented AI-enabled learning features that achieved \textbf{98\% adoption} among test users.}
+        \resumeItem{Engineered a JSON data processor that substantially reduced data-loading time and improved user navigation speed.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fulfillment Associate}{Sep. 2023 -- June 2026}
+      {Amazon Fulfillment}{Reno, NV}
+      \resumeItemListStart
+        \resumeItem{Consistently met productivity and quality benchmarks in a fast-paced, metrics-driven environment while maintaining zero safety citations.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{FragComms} $|$ \emph{TypeScript, Python, React, PostgreSQL, Docker}}{Sep. 2025 -- May 2026}
+            \resumeItemListStart
+                \resumeItem{Led full-stack design and development across a React/Vite frontend, Express.js backend, and PostgreSQL database.}
+                \resumeItem{Designed normalized database structures, integrated Discord OAuth authentication, and researched the OpenAI Whisper API for speech-to-text transcription.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{UNR Class Search Database Redesign} $|$ \emph{SQL, Data Modeling}}{Jan. 2024 -- May 2024}
+            \resumeItemListStart
+                \resumeItem{Redesigned and test-implemented a scalable SQL database to replace a legacy class search system and support future web integration.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{Embedded Swamp Cooler System} $|$ \emph{C/C++, ATMega2560, Embedded Systems}}{Aug. 2024 -- Dec. 2024}
+            \resumeItemListStart
+                \resumeItem{Led software development for an automated cooling system integrating temperature, humidity, water-level, and RTC sensors.}
+                \resumeItem{Implemented an interrupt-driven finite-state machine and low-level control of relays, stepper motor, LCD, fan, and pump.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, TypeScript, Python, C/C++, SQL} \\
+     \textbf{Frontend}{: React, Vue.js, HTML/CSS} \\
+     \textbf{Backend}{: Node.js, Express.js, NestJS, IngestAPI, REST APIs} \\
+     \textbf{Databases}{: PostgreSQL, MySQL, Supabase} \\
+     \textbf{Tools}{: Git, GitHub, Docker, VS Code} \\
+     \textbf{Data}{: pandas, NumPy, Matplotlib} }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
