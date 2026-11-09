@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Sean Lai is a software engineer building thoughtful full-stack products and human-AI research tools." />
+    <meta
+      name="description"
+      content="Sean Lai is a software engineer building thoughtful full-stack products and human-AI research tools."
+    />
     <meta name="theme-color" content="#071a35" />
     <title>Sean Lai | Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script type="module">
-      import { animate, inView, stagger } from "https://cdn.jsdelivr.net/npm/motion@12.23.24/+esm";
+      import {
+        animate,
+        inView,
+        stagger,
+      } from "https://cdn.jsdelivr.net/npm/motion@12.23.24/+esm";
       window.motionTools = { animate, inView, stagger };
     </script>
     <script src="script.js" defer></script>
@@ -20,15 +30,24 @@
     <div class="page-glow page-glow-one" aria-hidden="true"></div>
     <div class="page-glow page-glow-two" aria-hidden="true"></div>
     <header class="site-header shell">
-      <a class="wordmark" href="#top" aria-label="Sean Lai home"><span>SL</span><strong>Sean Lai</strong></a>
+      <a class="wordmark" href="#top" aria-label="Sean Lai home"
+        ><span>SL</span><strong>Sean Lai</strong></a
+      >
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
         <a href="#about">About</a>
       </nav>
       <div class="header-actions">
-        <a class="availability" href="mailto:laisean5@gmail.com"><i></i> Available for opportunities</a>
-        <button class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
+        <a class="availability" href="mailto:laisean5@gmail.com"
+          ><i></i> Available for opportunities</a
+        >
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to light mode"
+          aria-pressed="false"
+        >
           <span class="sun">☼</span><span class="moon">◐</span>
         </button>
       </div>
@@ -37,69 +56,419 @@
     <main id="top">
       <section class="hero shell" data-section="01-hero" aria-label="01 Hero">
         <div class="hero-copy">
-          <p class="eyebrow reveal">Software engineer <span>•</span> builder <span>•</span> researcher</p>
-          <h1 id="hero-title" class="reveal">I make complex<br /><em>systems feel simple.</em></h1>
-          <p class="hero-intro reveal">I’m Sean, a computer science student and software engineer focused on useful interfaces, reliable systems, and the space where people meet technology.</p>
+          <h1 id="hero-title" class="reveal">
+            I make complex<br /><em>systems feel simple.</em>
+          </h1>
           <div class="hero-links reveal">
-            <a class="button button-primary" href="#work">Explore my work <span>↗</span></a>
+            <a class="button button-primary" href="#work"
+              >Explore my work <span>↗</span></a
+            >
             <a class="text-link" href="#contact">Let’s talk <span>↘</span></a>
           </div>
         </div>
-        <div class="hero-orbit reveal" aria-label="Sean Lai builds across the stack">
-          <div class="orbit orbit-outer"></div>
-          <div class="orbit orbit-inner"></div>
-          <div class="orbit-node node-frontend"><span class="orbit-dot"></span><span class="orbit-label">FRONTEND</span></div>
-          <div class="orbit-node node-backend"><span class="orbit-dot"></span><span class="orbit-label">BACKEND</span></div>
-          <div class="orbit-node node-data"><span class="orbit-dot"></span><span class="orbit-label">DATA</span></div>
-          <div class="orbit-node node-systems"><span class="orbit-dot"></span><span class="orbit-label">SYSTEMS</span></div>
-          <div class="orbit-core"><span>SL</span><small>BUILD / RESEARCH</small></div>
+        <p class="hero-option-label reveal">
+          Workflow / From question to outcome
+        </p>
+        <div
+          class="workflow reveal"
+          aria-label="Sean Lai's engineering workflow"
+        >
+          <div class="workflow-track" aria-hidden="true">
+            <div class="workflow-line"></div>
+            <div class="workflow-pulse"></div>
+          </div>
+          <div class="workflow-steps">
+            <button
+              class="workflow-step is-active"
+              type="button"
+              data-workflow-step="question"
+            >
+              <span class="workflow-step-number">01</span>
+              <strong>QUESTION</strong>
+              <small>Understand the problem</small>
+            </button>
+            <button
+              class="workflow-step"
+              type="button"
+              data-workflow-step="model"
+            >
+              <span class="workflow-step-number">02</span>
+              <strong>MODEL</strong>
+              <small>Shape the system</small>
+            </button>
+            <button
+              class="workflow-step"
+              type="button"
+              data-workflow-step="build"
+            >
+              <span class="workflow-step-number">03</span>
+              <strong>BUILD</strong>
+              <small>Make the interface</small>
+            </button>
+            <button
+              class="workflow-step"
+              type="button"
+              data-workflow-step="test"
+            >
+              <span class="workflow-step-number">04</span>
+              <strong>TEST</strong>
+              <small>Learn from evidence</small>
+            </button>
+            <button
+              class="workflow-step"
+              type="button"
+              data-workflow-step="improve"
+            >
+              <span class="workflow-step-number">05</span>
+              <strong>IMPROVE</strong>
+              <small>Iterate with purpose</small>
+            </button>
+          </div>
+          <p class="workflow-caption" aria-live="polite">
+            Start with the person, system, or question that needs attention.
+          </p>
         </div>
       </section>
 
-      <section class="signal-bar shell reveal" data-section="02-highlights" aria-label="02 Highlights">
-        <div><strong>98%</strong><span>AI feature adoption<br />among test users</span></div>
-        <div><strong>03</strong><span>Selected projects<br />from product to hardware</span></div>
-        <div><strong>∞</strong><span>Curiosity across<br />the entire stack</span></div>
-      </section>
-
-      <section id="work" class="section shell" data-section="03-selected-work" aria-labelledby="work-title">
-        <div class="section-heading reveal"><h2 id="work-title">Things I’ve<br /><em>built.</em></h2></div>
+      <section
+        id="work"
+        class="section shell"
+        data-section="02-selected-work"
+        aria-labelledby="work-title"
+      >
+        <div class="section-heading reveal">
+          <h2 id="work-title">Things I’ve<br /><em>built.</em></h2>
+        </div>
         <div class="project-grid">
-          <article class="project-card reveal">
-            <div class="project-number">01 / 04</div><div class="project-visual comms-visual"><span class="visual-badge">FRAG // COMMS</span><div class="signal-wave"></div><span class="visual-caption">VOICE → TEXT → TEAM</span></div>
-            <div class="project-content"><p class="project-type">Full-stack platform</p><h3>FragComms</h3><p>A communication platform designed around fast, structured team conversations. Led the full-stack build from a React/Vite interface to an Express and PostgreSQL backend.</p><div class="tag-list"><span>TypeScript</span><span>React</span><span>PostgreSQL</span><span>Docker</span></div><a class="project-link" href="https://github.com/fragcomms" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a></div>
+          <article class="project-card reveal" data-project="fragcomms">
+            <div class="project-number">01 / 04</div>
+            <div class="project-visual comms-visual">
+              <span class="visual-badge">FRAG // COMMS</span>
+              <div class="signal-wave"></div>
+              <span class="visual-caption">VOICE → TEXT → TEAM</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Full-stack platform</p>
+              <h3>FragComms</h3>
+              <p>
+                A communication platform designed around fast, structured team
+                conversations. Led the full-stack build from a React/Vite
+                interface to an Express and PostgreSQL backend.
+              </p>
+              <div class="tag-list">
+                <span>TypeScript</span><span>React</span><span>PostgreSQL</span
+                ><span>Docker</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  class="case-study-trigger"
+                  type="button"
+                  data-case-study="fragcomms"
+                >
+                  Read case study <span>↗</span></button
+                ><a
+                  class="project-link"
+                  href="https://github.com/fragcomms"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View on GitHub <span>↗</span></a
+                >
+              </div>
+            </div>
           </article>
-          <article class="project-card reveal">
-            <div class="project-number">02 / 04</div><div class="project-visual database-visual"><div class="db-lines"><i></i><i></i><i></i><i></i></div><span class="visual-caption">MODEL / QUERY / SCALE</span></div>
-            <div class="project-content"><p class="project-type">Data modeling</p><h3>Class Search<br />Redesign</h3><p>A scalable SQL database redesign to replace a legacy class search system and support future web integration.</p><div class="tag-list"><span>SQL</span><span>Data modeling</span></div><a class="project-link" href="https://github.com/Complicated128" target="_blank" rel="noreferrer">Explore GitHub <span>↗</span></a></div>
+          <article class="project-card reveal" data-project="class-search">
+            <div class="project-number">02 / 04</div>
+            <div class="project-visual database-visual">
+              <div class="db-lines"><i></i><i></i><i></i><i></i></div>
+              <span class="visual-caption">MODEL / QUERY / SCALE</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Data modeling</p>
+              <h3>Class Search<br />Redesign</h3>
+              <p>
+                A scalable SQL database redesign to replace a legacy class
+                search system and support future web integration.
+              </p>
+              <div class="tag-list">
+                <span>SQL</span><span>Data modeling</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  class="case-study-trigger"
+                  type="button"
+                  data-case-study="class-search"
+                >
+                  Read case study <span>↗</span></button
+                ><a
+                  class="project-link"
+                  href="https://github.com/Complicated128"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Explore GitHub <span>↗</span></a
+                >
+              </div>
+            </div>
           </article>
-          <article class="project-card reveal">
-            <div class="project-number">03 / 04</div><div class="project-visual hardware-visual"><div class="hardware-chip"><span>ATMega</span><b>2560</b></div><div class="circuit-line line-a"></div><div class="circuit-line line-b"></div><span class="visual-caption">SENSE / DECIDE / ACT</span></div>
-            <div class="project-content"><p class="project-type">Embedded systems</p><h3>Swamp Cooler<br />System</h3><p>An automated cooling system coordinating temperature, humidity, water-level, and real-time clock sensors.</p><div class="tag-list"><span>C / C++</span><span>Embedded</span></div><a class="project-link" href="https://github.com/Complicated128" target="_blank" rel="noreferrer">Explore GitHub <span>↗</span></a></div>
+          <article class="project-card reveal" data-project="swamp-cooler">
+            <div class="project-number">03 / 04</div>
+            <div class="project-visual hardware-visual">
+              <div class="hardware-chip"><span>ATMega</span><b>2560</b></div>
+              <div class="circuit-line line-a"></div>
+              <div class="circuit-line line-b"></div>
+              <span class="visual-caption">SENSE / DECIDE / ACT</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Embedded systems</p>
+              <h3>Swamp Cooler<br />System</h3>
+              <p>
+                An automated cooling system coordinating temperature, humidity,
+                water-level, and real-time clock sensors.
+              </p>
+              <div class="tag-list">
+                <span>C / C++</span><span>Embedded</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  class="case-study-trigger"
+                  type="button"
+                  data-case-study="swamp-cooler"
+                >
+                  Read case study <span>↗</span></button
+                ><a
+                  class="project-link"
+                  href="https://github.com/Complicated128"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Explore GitHub <span>↗</span></a
+                >
+              </div>
+            </div>
           </article>
-          <article class="project-card project-fourth reveal">
-            <div class="project-number">04 / 04</div><div class="project-visual influence-visual"><div class="influence-graph"><i></i><i></i><i></i><i></i><i></i><b>PR</b></div><span class="visual-caption">INFLUENCE ≠ POPULARITY</span></div>
-            <div class="project-content"><p class="project-type">Data engineering / graph analytics</p><h3>YouTube Influence Analysis</h3><p>Modeled the YouTube dataset as a directed graph and applied PageRank with PySpark to compare structural influence against raw view counts.</p><div class="tag-list"><span>Python</span><span>PySpark</span><span>PageRank</span><span>pandas</span></div><a class="project-link" href="https://github.com/Complicated128/YoutubeInfluenceAnalysis" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a></div>
+          <article
+            class="project-card project-fourth reveal"
+            data-project="youtube-influence"
+          >
+            <div class="project-number">04 / 04</div>
+            <div class="project-visual influence-visual">
+              <div class="influence-graph">
+                <i></i><i></i><i></i><i></i><i></i><b>PR</b>
+              </div>
+              <span class="visual-caption">INFLUENCE ≠ POPULARITY</span>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Data engineering / graph analytics</p>
+              <h3>YouTube Influence Analysis</h3>
+              <p>
+                Modeled the YouTube dataset as a directed graph and applied
+                PageRank with PySpark to compare structural influence against
+                raw view counts.
+              </p>
+              <div class="tag-list">
+                <span>Python</span><span>PySpark</span><span>PageRank</span
+                ><span>pandas</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  class="case-study-trigger"
+                  type="button"
+                  data-case-study="youtube-influence"
+                >
+                  Read case study <span>↗</span></button
+                ><a
+                  class="project-link"
+                  href="https://github.com/Complicated128/YoutubeInfluenceAnalysis"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View on GitHub <span>↗</span></a
+                >
+              </div>
+            </div>
           </article>
         </div>
+        <dialog class="case-study-dialog" aria-labelledby="case-study-title">
+          <button
+            class="dialog-close"
+            type="button"
+            aria-label="Close case study"
+          >
+            ×
+          </button>
+          <div class="case-study-heading">
+            <p class="eyebrow" id="case-study-type">Project case study</p>
+            <h2 id="case-study-title">Project title</h2>
+            <p class="case-study-summary" id="case-study-summary"></p>
+          </div>
+
+          <div class="case-study-toolbar">
+            <p class="case-study-progress" aria-live="polite">01 / 05</p>
+            <div class="case-study-controls">
+              <button
+                class="case-study-arrow"
+                type="button"
+                data-case-study-previous
+                aria-label="Previous case study slide"
+              >
+                ←
+              </button>
+              <button
+                class="case-study-arrow"
+                type="button"
+                data-case-study-next
+                aria-label="Next case study slide"
+              >
+                →
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="case-study-track"
+            tabindex="0"
+            aria-label="Case study slides"
+          ></div>
+          <div
+            class="case-study-dots"
+            role="tablist"
+            aria-label="Case study slides"
+          ></div>
+          <p class="case-study-note">
+            Replace the placeholder slides with your process, decisions, and
+            results as you gather project details.
+          </p>
+        </dialog>
       </section>
 
-      <section id="experience" class="section experience-section shell" data-section="04-experience" aria-labelledby="experience-title">
-        <div class="section-heading reveal"><h2 id="experience-title">Where I’ve<br /><em>learned.</em></h2></div>
+      <section
+        id="experience"
+        class="section experience-section shell"
+        data-section="03-experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-heading reveal">
+          <h2 id="experience-title">Where I’ve<br /><em>learned.</em></h2>
+        </div>
         <div class="timeline">
-          <article class="timeline-item reveal"><div class="timeline-date">AUG 2026 — PRESENT</div><div class="timeline-marker"></div><div><p class="project-type">HACxLab · National Ilan University</p><h3>Lab Member, TEEP Intern</h3><p>Maintaining a research website for human-AI interaction studies, processing collected data, and contributing technical perspective to study design.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-date">JUN 2025 — PRESENT</div><div class="timeline-marker"></div><div><p class="project-type">SparkAmplify Inc. · Remote / Taiwan</p><h3>Software Engineer Intern</h3><p>Building custom frontend and backend services with React, Vue, NestJS, PostgreSQL, Supabase, and Docker. Developed AI-enabled learning features reaching 98% adoption in testing.</p></div></article>
-          <article class="timeline-item reveal"><div class="timeline-date">SEP 2023 — JUN 2026</div><div class="timeline-marker"></div><div><p class="project-type">Amazon Fulfillment · Reno, NV</p><h3>Fulfillment Associate</h3><p>Worked in a fast-paced, metrics-driven environment while consistently meeting quality and productivity benchmarks with zero safety citations.</p></div></article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">AUG 2026 — PRESENT</div>
+            <div class="timeline-marker"></div>
+            <div>
+              <p class="project-type">HACxLab · National Ilan University</p>
+              <h3>Lab Member, TEEP Intern</h3>
+              <p>
+                Maintaining a research website for human-AI interaction studies,
+                processing collected data, and contributing technical
+                perspective to study design.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">JUN 2025 — PRESENT</div>
+            <div class="timeline-marker"></div>
+            <div>
+              <p class="project-type">SparkAmplify Inc. · Remote / Taiwan</p>
+              <h3>Software Engineer Intern</h3>
+              <p>
+                Building custom frontend and backend services with React, Vue,
+                NestJS, PostgreSQL, Supabase, and Docker. Developed AI-enabled
+                learning features reaching 98% adoption in testing.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">SEP 2023 — JUN 2026</div>
+            <div class="timeline-marker"></div>
+            <div>
+              <p class="project-type">Amazon Fulfillment · Reno, NV</p>
+              <h3>Fulfillment Associate</h3>
+              <p>
+                Worked in a fast-paced, metrics-driven environment while
+                consistently meeting quality and productivity benchmarks with
+                zero safety citations.
+              </p>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section id="about" class="about-section shell" data-section="05-about-toolkit" aria-labelledby="about-title">
-        <div class="about-copy reveal"><h2 id="about-title">Curious by<br /><em>default.</em></h2><p>I’m studying Computer Science and Engineering at the University of Nevada, Reno. My favorite work lives between disciplines: clean interfaces backed by considered data models, or physical systems made smarter through software.</p><p>When I’m not building, I’m usually learning a new layer of the stack or figuring out how to make an idea more useful to the person on the other side of the screen.</p></div>
-        <div class="skills-panel reveal"><p class="eyebrow">Toolkit</p><div class="skill-group"><span>Languages</span><div>JavaScript · TypeScript · Python · C/C++ · SQL</div></div><div class="skill-group"><span>Build</span><div>React · Vue.js · HTML/CSS · Node.js · Express.js · NestJS</div></div><div class="skill-group"><span>Data & tools</span><div>PostgreSQL · MySQL · Supabase · pandas · NumPy · Docker · Git</div></div><div class="education"><span>Currently studying</span><strong>B.S. Computer Science & Engineering</strong><small>University of Nevada, Reno · 2024—2026</small></div></div>
+      <section
+        id="about"
+        class="about-section shell"
+        data-section="04-about-toolkit"
+        aria-labelledby="about-title"
+      >
+        <div class="about-copy reveal">
+          <h2 id="about-title">Curious by<br /><em>default.</em></h2>
+          <p>
+            I’m studying Computer Science and Engineering at the University of
+            Nevada, Reno. My favorite work lives between disciplines: clean
+            interfaces backed by considered data models, or physical systems
+            made smarter through software.
+          </p>
+          <p>
+            When I’m not building, I’m usually learning a new layer of the stack
+            or figuring out how to make an idea more useful to the person on the
+            other side of the screen.
+          </p>
+        </div>
+        <div class="skills-panel reveal">
+          <p class="eyebrow">Toolkit</p>
+          <div class="skill-group">
+            <span>Languages</span>
+            <div>JavaScript · TypeScript · Python · C/C++ · SQL</div>
+          </div>
+          <div class="skill-group">
+            <span>Build</span>
+            <div>React · Vue.js · HTML/CSS · Node.js · Express.js · NestJS</div>
+          </div>
+          <div class="skill-group">
+            <span>Data & tools</span>
+            <div>
+              PostgreSQL · MySQL · Supabase · pandas · NumPy · Docker · Git
+            </div>
+          </div>
+          <div class="education">
+            <span>Currently studying</span
+            ><strong>B.S. Computer Science & Engineering</strong
+            ><small>University of Nevada, Reno · 2024—2026</small>
+          </div>
+        </div>
       </section>
 
-      <section id="contact" class="contact-section shell reveal" data-section="06-contact" aria-labelledby="contact-title"><h2 id="contact-title">Let’s build<br /><em>something useful.</em></h2><div class="contact-details"><a class="contact-email" href="mailto:laisean5@gmail.com">laisean5@gmail.com <span>↗</span></a><a class="contact-phone" href="tel:+17022498242">702-249-8242 <span>↗</span></a></div></section>
+      <section
+        id="contact"
+        class="contact-section shell reveal"
+        data-section="05-contact"
+        aria-labelledby="contact-title"
+      >
+        <h2 id="contact-title">Let’s build<br /><em>something useful.</em></h2>
+        <div class="contact-details">
+          <a class="contact-email" href="mailto:laisean5@gmail.com"
+            >laisean5@gmail.com <span>↗</span></a
+          ><a class="contact-phone" href="tel:+17022498242"
+            >702-249-8242 <span>↗</span></a
+          >
+        </div>
+      </section>
     </main>
-    <footer class="site-footer shell" data-section="07-footer" aria-label="07 Footer"><span>© 2026 Sean Lai</span><div><a href="https://github.com/Complicated128" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/sean-lai" target="_blank" rel="noreferrer">LinkedIn</a></div></footer>
+    <footer
+      class="site-footer shell"
+      data-section="06-footer"
+      aria-label="07 Footer"
+    >
+      <span>© 2026 Sean Lai</span>
+      <div>
+        <a
+          href="https://github.com/Complicated128"
+          target="_blank"
+          rel="noreferrer"
+          >GitHub</a
+        ><a
+          href="https://www.linkedin.com/in/sean-lai"
+          target="_blank"
+          rel="noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+    </footer>
   </body>
 </html>
